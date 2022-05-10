@@ -5,6 +5,7 @@
 * update Clash Binaries links
 * Update Mod links.
 * Update links.
+* Update luci-app-r2sflasher.
 
 ## 20210303
 * 日常更新
