@@ -3,6 +3,7 @@
 * 增加luci-app-argon-config
 * 修改变更库链接
 * update Clash Binaries links
+* Update Mod links.
 
 ## 20210303
 * 日常更新
