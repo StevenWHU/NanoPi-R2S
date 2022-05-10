@@ -6,6 +6,7 @@
 * Update Mod links.
 * Update links.
 * Update luci-app-r2sflasher.
+* Disable luci-app-r2sflasher and enable guest-wifi.
 
 ## 20210303
 * 日常更新
