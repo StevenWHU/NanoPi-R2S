@@ -80,7 +80,7 @@ jobs:
           git clone https://github.com/sirpdboy/luci-app-advanced
           
           #svn co https://github.com/songchenwen/nanopi-r2s/trunk/luci-app-r2sflasher
-          svn co https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher
+          #git clone https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher
           
           git clone https://github.com/pymumu/smartdns
           git clone https://github.com/pymumu/luci-app-smartdns
