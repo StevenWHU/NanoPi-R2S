@@ -71,19 +71,21 @@ jobs:
           git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
           git clone https://github.com/jerrykuku/luci-app-argon-config.git
 
-          svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
+          #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
+          git clone https://github.com/vernesong/OpenClash/tree/master/luci-app-openclash
           
-          svn co https://github.com/xiaorouji/openwrt-passwall
-          svn co https://github.com/xiaorouji/openwrt-passwall2
+          git clone https://github.com/xiaorouji/openwrt-passwall
+          git clone https://github.com/xiaorouji/openwrt-passwall2
           
-          svn co https://github.com/sirpdboy/luci-app-advanced
+          git clone https://github.com/sirpdboy/luci-app-advanced
           
-          svn co https://github.com/songchenwen/nanopi-r2s/trunk/luci-app-r2sflasher
+          #svn co https://github.com/songchenwen/nanopi-r2s/trunk/luci-app-r2sflasher
+          git clone https://github.com/songchenwen/nanopi-r2s/tree/master/luci-app-r2sflasher
           
-          svn co https://github.com/pymumu/smartdns
-          svn co https://github.com/pymumu/luci-app-smartdns
+          git clone https://github.com/pymumu/smartdns
+          git clone https://github.com/pymumu/luci-app-smartdns
           
-          svn co https://github.com/lisaac/luci-app-dockerman
+          git clone https://github.com/lisaac/luci-app-dockerman
           
           git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
         
@@ -118,16 +120,20 @@ jobs:
           cd code/friendlywrt
 
           rm -rf feeds/packages/libs/libcap
-          svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
+          #svn co https://github.com/openwrt/packages/trunk/libs/libcap feeds/packages/libs/libcap
+          git clone https://github.com/friendlyarm/friendlywrt/tree/master-v21.02/package/libs/libpcap feeds/packages/libs/libcap
           
           rm -rf package/feeds/packages/netdata
-          svn co https://github.com/openwrt/packages/trunk/admin/netdata package/feeds/packages/netdata
+          #svn co https://github.com/openwrt/packages/trunk/admin/netdata package/feeds/packages/netdata
+          git clone https://github.com/openwrt/packages/tree/master/admin/netdata package/feeds/packages/netdata
 
           rm -rf feeds/packages/libs/libnatpmp
-          svn co https://github.com/coolsnowwolf/packages/trunk/libs/libnatpmp feeds/packages/libs/libnatpmp
+          #svn co https://github.com/coolsnowwolf/packages/trunk/libs/libnatpmp feeds/packages/libs/libnatpmp
+          git clone https://github.com/coolsnowwolf/packages/tree/master/libs/libnatpmp feeds/packages/libs/libnatpmp
           
           rm -rf feeds/packages/lang/luasec
-          svn co https://github.com/coolsnowwolf/packages/trunk/lang/luasec feeds/packages/lang/luasec
+          #svn co https://github.com/coolsnowwolf/packages/trunk/lang/luasec feeds/packages/lang/luasec
+          git clone https://github.com/coolsnowwolf/packages/tree/master/lang/luasec feeds/packages/lang/luasec
 
           sed -i '/STAMP_BUILT/d' feeds/packages/utils/runc/Makefile
           sed -i '/STAMP_BUILT/d' feeds/packages/utils/containerd/Makefile
@@ -136,8 +142,8 @@ jobs:
           sed -i '/upx/d' package/lean/UnblockNeteaseMusicGo/Makefile
           sed -i '/upx/d' package/trojan-go/Makefile
           
-          wget -O package/kernel/kmod-sched-cake/Makefile https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/kernel/kmod-sched-cake-oot/Makefile
-          wget -O feeds/packages/libs/libxml2/Makefile https://raw.githubusercontent.com/coolsnowwolf/packages/master/libs/libxml2/Makefile
+          #wget -O package/kernel/kmod-sched-cake/Makefile https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/kernel/kmod-sched-cake-oot/Makefile
+          #wget -O feeds/packages/libs/libxml2/Makefile https://raw.githubusercontent.com/coolsnowwolf/packages/master/libs/libxml2/Makefile
 
           sed -i "/redirect_https/d" package/network/services/uhttpd/files/uhttpd.config
           sed -i '/Load Average/i\\t\t<tr><td width="33%"><%:CPU Temperature%></td><td><%=luci.sys.exec("cut -c1-2 /sys/class/thermal/thermal_zone0/temp")%><span>&#8451;</span></td></tr>' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
