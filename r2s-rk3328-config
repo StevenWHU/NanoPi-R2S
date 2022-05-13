@@ -3220,15 +3220,15 @@ CONFIG_PACKAGE_kmod-usb-wdm=y
 # CONFIG_PACKAGE_kmod-ath9k-htc is not set
 # CONFIG_PACKAGE_kmod-b43 is not set
 # CONFIG_PACKAGE_kmod-b43legacy is not set
-CONFIG_PACKAGE_kmod-brcmfmac=y
-CONFIG_BRCMFMAC_SDIO=y
-CONFIG_BRCMFMAC_USB=y
-CONFIG_BRCMFMAC_PCIE=y
+# CONFIG_PACKAGE_kmod-brcmfmac=y
+# CONFIG_BRCMFMAC_SDIO=y
+# CONFIG_BRCMFMAC_USB=y
+# CONFIG_BRCMFMAC_PCIE=y
 # CONFIG_PACKAGE_kmod-brcmsmac is not set
-CONFIG_PACKAGE_kmod-brcmutil=y
+# CONFIG_PACKAGE_kmod-brcmutil=y
 # CONFIG_PACKAGE_BRCM80211_DEBUG is not set
 # CONFIG_PACKAGE_kmod-carl9170 is not set
-CONFIG_PACKAGE_kmod-cfg80211=y
+# CONFIG_PACKAGE_kmod-cfg80211=y
 # CONFIG_PACKAGE_kmod-hermes is not set
 # CONFIG_PACKAGE_kmod-hermes-pci is not set
 # CONFIG_PACKAGE_kmod-hermes-plx is not set
@@ -3243,10 +3243,10 @@ CONFIG_PACKAGE_kmod-cfg80211=y
 # CONFIG_PACKAGE_kmod-libertas-spi is not set
 # CONFIG_PACKAGE_kmod-libertas-usb is not set
 # CONFIG_PACKAGE_kmod-libipw is not set
-CONFIG_PACKAGE_kmod-mac80211=y
-CONFIG_PACKAGE_MAC80211_DEBUGFS=y
+# CONFIG_PACKAGE_kmod-mac80211=y
+# CONFIG_PACKAGE_MAC80211_DEBUGFS=y
 # CONFIG_PACKAGE_MAC80211_TRACING is not set
-CONFIG_PACKAGE_MAC80211_MESH=y
+# CONFIG_PACKAGE_MAC80211_MESH=y
 # CONFIG_PACKAGE_kmod-mac80211-hwsim is not set
 # CONFIG_PACKAGE_kmod-mt76 is not set
 # CONFIG_PACKAGE_kmod-mt7601u is not set
@@ -3276,20 +3276,57 @@ CONFIG_PACKAGE_MAC80211_MESH=y
 # CONFIG_PACKAGE_kmod-rt2x00-lib is not set
 # CONFIG_PACKAGE_kmod-rt61-pci is not set
 # CONFIG_PACKAGE_kmod-rt73-usb is not set
-#CONFIG_PACKAGE_kmod-rtl8180=y
-#CONFIG_PACKAGE_kmod-rtl8187=y
-#CONFIG_PACKAGE_kmod-rtl8192ce=y
-#CONFIG_PACKAGE_kmod-rtl8192cu=y
-#CONFIG_PACKAGE_kmod-rtl8192de=y
-#CONFIG_PACKAGE_kmod-rtl8192se=y
-#CONFIG_PACKAGE_kmod-rtl8812au-ct=y
-#CONFIG_PACKAGE_kmod-rtl8821ae=y
-CONFIG_PACKAGE_kmod-rtl8821cu=y
-CONFIG_PACKAGE_kmod-rtl8xxxu=y
-#CONFIG_PACKAGE_kmod-wl12xx=y
-#CONFIG_PACKAGE_kmod-wl18xx=y
-#CONFIG_PACKAGE_kmod-wlcore=y
+# CONFIG_PACKAGE_kmod-rtl8180=y
+# CONFIG_PACKAGE_kmod-rtl8187=y
+# CONFIG_PACKAGE_kmod-rtl8192ce=y
+# CONFIG_PACKAGE_kmod-rtl8192cu=y
+# CONFIG_PACKAGE_kmod-rtl8192de=y
+# CONFIG_PACKAGE_kmod-rtl8192se=y
+# CONFIG_PACKAGE_kmod-rtl8812au-ct=y
+# CONFIG_PACKAGE_kmod-rtl8821ae=y
+# CONFIG_PACKAGE_kmod-rtl8821cu=y
+# CONFIG_PACKAGE_kmod-rtl8xxxu=y
+# CONFIG_PACKAGE_kmod-wl12xx=y
+# CONFIG_PACKAGE_kmod-wl18xx=y
+# CONFIG_PACKAGE_kmod-wlcore=y
 # CONFIG_PACKAGE_kmod-zd1211rw is not set
+
+CONFIG_PACKAGE_ath9k-htc-firmware=y
+CONFIG_PACKAGE_libertas-usb-firmware=y
+CONFIG_PACKAGE_mt7601u-firmware=y
+CONFIG_PACKAGE_p54-usb-firmware=y
+CONFIG_PACKAGE_prism54-firmware=y
+CONFIG_PACKAGE_rs9113-firmware=y
+CONFIG_PACKAGE_rt2800-usb-firmware=y
+CONFIG_PACKAGE_rt73-usb-firmware=y
+CONFIG_PACKAGE_rtl8188eu-firmware=y
+CONFIG_PACKAGE_rtl8192cu-firmware=y
+CONFIG_PACKAGE_rtl8192eu-firmware=y
+CONFIG_PACKAGE_rtl8192su-firmware=y
+CONFIG_PACKAGE_rtl8723au-firmware=y
+CONFIG_PACKAGE_rtl8723bu-firmware=y
+
+CONFIG_PACKAGE_kmod-rtl8187=y
+CONFIG_PACKAGE_kmod-rtl8188eu=y
+CONFIG_PACKAGE_kmod-rtl8192c-common=y
+CONFIG_PACKAGE_kmod-rtl8192cu=y
+CONFIG_PACKAGE_kmod-rtl8192du=y
+CONFIG_PACKAGE_kmod-rtl8812au-ac=y
+CONFIG_PACKAGE_kmod-rtl8821cu=y
+CONFIG_PACKAGE_kmod-rtl88x2bu=y
+CONFIG_PACKAGE_kmod-rtlwifi=y
+CONFIG_PACKAGE_kmod-rtlwifi-usb=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8150=y
+CONFIG_PACKAGE_kmod-usb-net-rtl8152=y
+CONFIG_PACKAGE_kmod-r8168=n
+CONFIG_PACKAGE_kmod-r8125=n
+
+CONFIG_PACKAGE_iw=y
+CONFIG_PACKAGE_iwinfo=y
+CONFIG_PACKAGE_wpad-wolfssl=y
+CONFIG_DRIVER_11AC_SUPPORT=y
+CONFIG_DRIVER_11N_SUPPORT=y
+CONFIG_DRIVER_11W_SUPPORT=y
 
 #
 # Languages
